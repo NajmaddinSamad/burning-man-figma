@@ -8,7 +8,9 @@
 
 body{
     font-family: 'Anton', sans-serif;
+    overflow-x: hidden;
 }
+
 /* --Header section */
 
 .head{
@@ -31,3 +33,20 @@ body{
     font-size: 17px;
 }
 
+
+/* -- about-section */ 
+.about{
+    padding-top: 112px;
+    text-align: justify;
+}
+.left-side p {
+padding-bottom: 112px;
+}
+.right-side p {
+    padding-bottom: 72px;
+}
+
+.about img{width: 100%;}
+.left-side img{
+    width: 50%;
+}
