@@ -1,0 +1,33 @@
+@import url("./reset.css");
+*{
+        margin: 0;
+    padding: 0;
+    box-sizing: border-box}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    font-family: 'Anton', sans-serif;
+}
+/* --Header section */
+
+.head{
+    background: linear-gradient(105.89deg, rgba(0, 0, 0, 0.37) 5.05%, rgba(0, 0, 0, 0.15) 112.97%),
+     url(../svgs/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;}
+.center{
+    padding-top: 200px;
+}
+.center h4 {
+    font-size: 30px;
+}
+.center h1{
+    font-size: 100px;
+    font-weight: 600;
+}
+.center button{
+    font-size: 17px;
+}
+
