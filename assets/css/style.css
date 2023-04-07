@@ -12,13 +12,22 @@ body{
 }
 
 /* --Header section */
+.kontainer{max-width:1400px}
 
 .head{
     background: linear-gradient(105.89deg, rgba(0, 0, 0, 0.37) 5.05%, rgba(0, 0, 0, 0.15) 112.97%),
      url(../svgs/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment:fixed;}
+    background-attachment:fixed;
+    width: 100%;
+    height: 100vh;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.nav-item{
+    padding-right:30px;
+    }
 .center{
     padding-top: 200px;
 }
@@ -28,28 +37,339 @@ body{
 .center h1{
     font-size: 100px;
     font-weight: 600;
+    padding-top: 34px;
+    padding-bottom: 37px;
 }
 .center button{
     font-size: 17px;
+    padding: 18px 23px;
 }
 
 
 /* -- about-section */ 
 .about{
-    padding-top: 112px;
+    padding: 112px 40px 0;
     text-align: justify;
 }
-.left-side p {
-padding-bottom: 112px;
+.about h3{
+font-size: 50px;
+font-weight: 600;
 }
-.right-side p {
-    padding-bottom: 72px;
+.left-side h4{
+    padding-top: 58px;
+padding-bottom: 19px;
+font-size:25px ;
+}
+.right-side h4{
+    padding-top: 58px;
+    padding-bottom: 19px;
+    font-size:25px ;
 }
 
+.left-side p {
+padding-bottom: 94px;
+font-size: 16px;
+text-align: justify;
+
+
+}
+.right-side p {
+    padding-bottom: 79px;
+    font-size: 16px;
+    text-align: justify;
+}
 .about img{width: 100%;}
 .left-side img{
     width: 50%;
 }
 .foot{
-    padding: 112px 0 112px;
+    padding: 112px 40px;
 }
+
+/* -- media queries  */
+@media(max-width:1200px){
+    .head{
+        width: 100%;
+        height: 100vh;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .nav-item{
+        padding-right:30px;
+        }
+    .center{
+        padding-top: 200px;
+    }
+    .center h4 {
+        font-size: 30px;
+    }
+    .center h1{
+        font-size: 100px;
+        font-weight: 600;
+        padding-top: 34px;
+        padding-bottom: 37px;
+    }
+    .center button{
+        font-size: 17px;
+        padding: 18px 23px;
+    }
+    
+    
+    /* -- about-section */ 
+    .about{
+        padding: 112px 30px 0;
+        text-align: justify;
+    }
+    .about h3{
+    font-size: 50px;
+    font-weight: 600;
+    }
+    .left-side h4{
+        padding-top: 58px;
+    padding-bottom: 19px;
+    font-size:25px ;
+    }
+    .right-side h4{
+        padding-top: 58px;
+        padding-bottom: 19px;
+        font-size:25px ;
+    }
+    
+    .left-side p {
+    padding-bottom: 94px;
+    font-size: 16px;
+    text-align: justify;
+    
+    
+    }
+    .right-side p {
+        padding-bottom: 68px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .about img{width: 100%;}
+    .left-side img{
+        width: 50%;
+    }
+    .foot{
+        padding: 112px 30px;
+    }
+}
+
+@media(max-width:992px){
+    .head { 
+       padding-left: 24px;
+      padding-right: 24px;
+      height: 50vh;
+   }
+   
+   .center{
+      padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .center h4 {
+      font-size: 25px;
+   }
+   .center h1{
+      font-size: 50px;
+      font-weight: 600;
+      padding-top: 40px;
+      padding-bottom: 45px;
+   }
+   .center button{
+      font-size: 20px;
+      padding: 18px 23px;
+   }
+   
+   
+   /* -- about-section */ 
+   .about{
+      padding: 50px 24px;
+   }
+   .about h3{
+   font-size: 35px;
+   font-weight: 600;
+   }
+   .left-side h4{
+      padding-top: 28px;
+   padding-bottom: 10px;
+   font-size:25px ;
+   }
+   
+   
+   .left-side p {
+    padding-bottom: 67px; 
+     font-size: 16px;
+   text-align: justify;
+   }
+   .left-down  img{
+       padding-bottom: 5px;
+   }
+   .right-side h4{
+       padding-top: 28px;
+       padding-bottom: 10px;
+       font-size:25px !important ;
+    }
+   .right-side p {
+      padding-bottom: 20px;
+      font-size: 16px;
+      text-align: justify;
+   }
+   .about img{width: 100%;}
+   .left-down img{
+    max-width: 50%;
+   }
+   
+   .foot{
+      padding: 20px 24px;
+      font-size: 11px; 
+   }
+   .foot h6{
+   padding-bottom: 10px;
+   }
+   }
+
+@media(max-width:768px) and (min-width:576px) {
+    .head { 
+        padding-left: 20px;
+       padding-right: 20px;
+       height: 60vh;
+    }
+    
+    .center{
+       padding-top: 50px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .center h4 {
+       font-size: 20px;
+    }
+    .center h1{
+       font-size: 40px;
+       font-weight: 600;
+       padding-top: 34px;
+       padding-bottom: 37px;
+    }
+    .center button{
+       font-size: 14px;
+       padding: 13px 18px;
+    }
+    
+    
+    /* -- about-section */ 
+    .about{
+       padding: 40px 20px;
+    }
+    .about h3{
+    font-size: 30px;
+    font-weight: 600;
+    }
+    .left-side h4{
+       padding-top: 28px;
+    padding-bottom: 10px;
+    font-size:20px ;
+    }
+    
+    
+    .left-side p {
+    padding-bottom: 20px;
+    font-size: 10px;
+    text-align: justify;
+    }
+    .left-down  img{
+        padding-bottom: 5px;
+    }
+    .right-side h4{
+        padding-top: 58px;
+        padding-bottom: 19px;
+        font-size:20px ;
+     }
+    .right-side p {
+       padding-bottom: 20px;
+       font-size: 10px;
+       text-align: justify;
+    }
+    .about img{width: 100%;}
+    
+    .foot{
+       padding: 30px 20px;
+    }
+    .foot h6{
+    padding-bottom: 10px;
+    }
+   }
+   
+
+   @media(max-width:576px){
+    .head { 
+       padding-left: 4px;
+      padding-right: 4px;
+      height: 50vh;
+   }
+   
+   .center{
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .center h4 {
+      font-size: 20px;
+   }
+   .center h1{
+      font-size: 40px;
+      font-weight: 600;
+      padding-top: 34px;
+      padding-bottom: 37px;
+   }
+   .center button{
+      font-size: 14px;
+      padding: 13px 18px;
+   }
+   
+   
+   /* -- about-section */ 
+   .about{
+      padding: 30px 4px;
+   }
+   .about h3{
+   font-size: 30px;
+   font-weight: 600;
+   }
+   .left-side h4{
+      padding-top: 28px;
+   padding-bottom: 10px;
+   font-size:20px ;
+   }
+   
+   
+   .left-side p {
+   padding-bottom: 20px;
+   font-size: 10px;
+   text-align: justify;
+   }
+   .left-down  img{
+       padding-bottom: 5px;
+   }
+   .right-side h4{
+       padding-top: 58px;
+       padding-bottom: 19px;
+       font-size:20px ;
+    }
+   .right-side p {
+      padding-bottom: 20px;
+      font-size: 10px;
+      text-align: justify;
+   }
+   img{width: 100%;}
+   
+   .foot{
+      padding: 20px 4px;
+   }
+   .foot h6{
+   padding-bottom: 10px;
+   }
+   }
